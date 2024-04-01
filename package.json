@@ -1,0 +1,14 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "Repository for dsa algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "dsa"
+  ],
+  "author": "Karan Trehan",
+  "license": "MIT"
+}
