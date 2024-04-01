@@ -1,45 +1,36 @@
 /**
  * Merges two sorted subarrays into a single sorted subarray.
+ * Uses swapping instead of creating a new array
  *
  * Time complexity: O(nlogn)
- * Space complexity: O(n)
- *
+ * Space complexity: O(1)
+ * 
  * @param {Array} arr - The input array.
  * @param {number} low - The starting index of the first subarray.
  * @param {number} mid - The ending index of the first subarray.
  * @param {number} high - The ending index of the second subarray.
  */
 function merge(arr, low, mid, high) {
-  const temp = [];
   let left = low;
   let right = mid + 1;
 
   // sort the arrays till both arrays have elements
   while (left <= mid && right <= high) {
-    if (arr[left] <= arr[right]) {
-      temp.push(arr[left]);
-      left += 1;
+    if (arr[left] > arr[right]) {
+      // swap elements
+      const temp = arr[right];
+      for (let i = right; i > left; i--) {
+        arr[i] = arr[i - 1];
+      }
+      arr[left] = temp;
+
+      // update indices
+      left++;
+      mid++;
+      right++;
     } else {
-      temp.push(arr[right]);
-      right += 1;
+      left++;
     }
-  }
-
-  // add all remaining elements from left subarray
-  while (left <= mid) {
-    temp.push(arr[left]);
-    left += 1;
-  }
-
-  // add all remaining elements from right subarray
-  while (right <= high) {
-    temp.push(arr[right]);
-    right += 1;
-  }
-
-  // replace the elements in the original array from the sorted array
-  for (let i = low; i <= high; i++) {
-    arr[i] = temp[i - low];
   }
 }
 
