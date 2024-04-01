@@ -1,5 +1,5 @@
 /**
- * Prints numbers from 1 to n recursively.
+ * Prints numbers from n to 1 recursively.
  *
  * Time Complexity: O(n) (depth of the recursion tree)
  * Space Complexity: O(n)
@@ -8,15 +8,15 @@
  * @returns {void}
  */
 function printNumbers(index, n) {
-  if (index > n) {
+  if (index < 1) {
     // base-case
     return;
   }
   console.log(index);
 
-  printNumbers(index + 1, n); // recursive-call
+  printNumbers(index - 1, n); // recursive-call
   return;
 }
 
 // invoking call
-printNumbers(1, 5);
+printNumbers(5, 5);
