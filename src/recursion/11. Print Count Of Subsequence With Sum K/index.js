@@ -12,6 +12,12 @@
  * @returns {number}
  */
 function countSubsequence(index, currentSum, sum, array) {
+  // only applicable if the array contains only positive integers
+  if (currentSum > sum) {
+    // conditional base-case
+    return 0;
+  }
+
   if (index === array.length) {
     // base-case
     if (currentSum === sum) {
