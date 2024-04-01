@@ -1,6 +1,9 @@
 /**
  * Prints the first subsequence of an array with a given sum.
  *
+ * Time Complexity: O(2^n)
+ * Space Complexity: O(n)
+ *
  * @param {number} index - The current index of the array.
  * @param {Array<number>} arr - The current subsequence being formed.
  * @param {number} currentSum - The current sum of the subsequence.
@@ -39,7 +42,7 @@ function printSubsequence(index, arr, currentSum, sum, array) {
 
 /**
  * Input:
- * 
+ *
  * index = 0
  * arr = []
  * currentSum = 0
@@ -50,6 +53,6 @@ printSubsequence(0, [], 0, 2, [1, 2, 1]); // invoking call
 
 /**
  * Output:
- * 
+ *
  * [1, 1]
  */
