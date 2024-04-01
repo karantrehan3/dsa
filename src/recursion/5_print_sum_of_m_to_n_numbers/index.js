@@ -1,5 +1,5 @@
 /**
- * Prints the sum of numbers from m to n recursively.
+ * Finds the sum of numbers from m to n recursively.
  *
  * Time Complexity: O(n) (depth of the recursion tree)
  * Space Complexity: O(n)
@@ -17,6 +17,6 @@ function sumNumbers(m, n) {
   }
   
   // invoking call
-  const sum = sumNumbers(1, 5);
+  const sum = sumNumbers(1, 5); // 15
   console.log(sum);
   
