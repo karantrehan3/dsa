@@ -1,6 +1,6 @@
 # Graphs
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ### Terms:
 
@@ -24,9 +24,22 @@ Bare minimum condition for a structure to be called as graph is that it should c
 
 ### Degree of an undirected graph
 
-1. The number of edges connected to a node is called the degree of that node.
+The number of edges connected to a node is called the degree of that node.
 
-### Property of undirected graphs
-1. Total Degree of a graph = 2 x E (where E means total number of edges)
+#### Property of undirected graphs
 
-![alt text](image-1.png)
+Total Degree of a graph = 2 x E (where E means total number of edges)
+
+![alt text](assets/image-1.png)
+
+### Degree of a directed graph
+
+1. Indegree - the number of incoming edges to a node
+2. Outdegree - the number of outgoing edges to a node
+
+### Edge Weights
+
+Every edge is assigned a weight.
+If it is not assigned, we will assume unit weights (which means 1)
+
+![alt text](assets/image-2.png)
