@@ -7,7 +7,6 @@
 - Node/Vertex - Corner points in the graph are called nodes/vertices.
 - Edge - A line joining 2 nodes is known as edge
 - Path - Contains a lot of nodes and each of them are reachable. (A node cannot appear twice in a path). Adjacent nodes should have an edge between them.
-- Degree - The number of edges arising out of a node is called the degree of that nod.e
 
 Bare minimum condition for a structure to be called as graph is that it should contain nodes and edges
 
@@ -22,3 +21,12 @@ Bare minimum condition for a structure to be called as graph is that it should c
 
 1. If you start from a node in graph, traverse the path and reach back to the node then the graph is known as a Cyclic Graph. If it has no direction edges then it is called as Undirected Cyclic Graph. If it has directional edges, it is called as Directed Cyclic Graph.
 2. If there is no way to reach the starting point in a graph after traversing the path, then it is known as Acyclic Graph
+
+### Degree of an undirected graph
+
+1. The number of edges connected to a node is called the degree of that node.
+
+### Property of undirected graphs
+1. Total Degree of a graph = 2 x E (where E means total number of edges)
+
+![alt text](image-1.png)
